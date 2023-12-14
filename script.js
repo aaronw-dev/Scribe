@@ -28,10 +28,12 @@ myElement.addEventListener("dragstart", (evt) => {
 myElement.addEventListener("keyup", (evt) => {
     words = myTextArea.value;
     console.log(words)
+    localStorage.setItem("wordBox1", words);
 })
 docTitleInput.addEventListener("keyup", (evt) => {
     documentTitle = evt.target.value;
     console.log(documentTitle);
+    localStorage.setItem("documentTitle", documentTitle);
 })
 
 

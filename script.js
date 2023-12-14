@@ -2,8 +2,10 @@ const canvas = document.getElementById("main_canvas")
 const ctx = canvas.getContext("2d");
 const myElement = document.getElementById("event")
 const myTextArea = document.getElementById("textarea")
+myTextArea.value = localStorage.getItem("wordBox1");
 const dummy = document.getElementById("dummy")
 const docTitleInput = document.getElementById("doc_title")
+docTitleInput.value = localStorage.getItem("documentTitle");
 var words = "";
 var documentTitle = "";
 var currentlyHoldingElement;
